@@ -119,7 +119,7 @@ with col2:
             with col_done_1:
                 st.write(f"• {task_name}")
             with col_done_2:
-                if st.button("🗑️ Delete", key=f"delete_done_{task_id}"):
+                if st.button("🗑️", key=f"delete_done_{task_id}"):
                     delete_task(task_id)
                     # Update the session state after deleting the task
                     st.session_state.done_tasks = get_tasks("done")
